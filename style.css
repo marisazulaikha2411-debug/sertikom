@@ -129,7 +129,7 @@ button {
   position: relative;
   display: flex;
   align-items: center;
-  background-image: url("https://images.unsplash.com/photo-1537996194471-e657df975ab4");
+  background-image: url("assets/hero-komodo.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -2194,6 +2194,160 @@ nav.navbar-jelajahnusa {
   z-index: 1055 !important;
   transform: none !important;
 }
+
+#jelajahNusaPackages .carousel-item .row {
+  display: flex;
+  align-items: stretch;
+}
+
+#jelajahNusaPackages .package-card {
+  height: 100%;
+}
+
+#jelajahNusaPackages .package-image img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  #jelajahNusaPackages .carousel-item .col-md-4 {
+    width: 100%;
+  }
+}
+/* SWIPER PACKAGES */
+.packageSwiper {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 5px 50px;
+}
+
+.packageSwiper .swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+.packageSwiper .swiper-slide {
+  flex-shrink: 0;
+  height: auto;
+}
+
+.packageSwiper .package-card {
+  width: 100%;
+  height: 100%;
+}
+
+.packageSwiper .package-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* PACKAGE SWIPER */
+.packageSwiper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 5px 55px;
+    box-sizing: border-box;
+}
+
+.packageSwiper .swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.packageSwiper .swiper-slide {
+    height: auto;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.packageSwiper .package-card {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* NAVIGATION */
+.packageSwiper .package-swiper-prev,
+.packageSwiper .package-swiper-next {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #0d6b83;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.packageSwiper .package-swiper-prev {
+    left: 10px;
+}
+
+.packageSwiper .package-swiper-next {
+    right: 10px;
+}
+
+/* PAGINATION */
+.packageSwiper .swiper-pagination {
+    bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+    .packageSwiper .package-swiper-prev,
+    .packageSwiper .package-swiper-next {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* UKURAN FORM PEMESANAN */
+.booking-layout-modern {
+    max-width: 950px;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+/* KOTAK FORM */
+.booking-form {
+    padding: 24px;
+}
+
+/* JARAK ANTAR INPUT */
+.booking-form .mb-3 {
+    margin-bottom: 12px !important;
+}
+
+/* UKURAN INPUT */
+.booking-form .form-control,
+.booking-form .form-select {
+    padding: 9px 12px;
+    font-size: 14px;
+}
+
+/* JUDUL FORM */
+.booking-form h3,
+.booking-form h4 {
+    font-size: 20px;
+}
+
+/* PANEL RINGKASAN */
+.booking-summary {
+    padding: 20px;
+}
+
+
 /* VARIABEL CSS */
 /* var() digunakan untuk memanggil variabel agar nilai seperti warna
    dan ukuran tidak perlu ditulis berulang kali. */
