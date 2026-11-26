@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Wisata | JelajahNusa</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-compass"></i>
+            Jelajah<span>Nusa.</span>
+        </div>
+
+        <a href="index.html#destinasi" class="btn-kembali">
+            <i class="fa-solid fa-arrow-left"></i>
+            Kembali
+        </a>
+    </nav>
+
+
+    <!-- HEADER -->
+    <section class="booking-header">
+        <div class="booking-header-content">
+            <p class="subjudul">PESAN PERJALANANMU</p>
+            <h1>Mulai Petualanganmu Bersama Kami</h1>
+            <p>Lengkapi informasi berikut untuk melanjutkan pemesanan wisata.</p>
+        </div>
+    </section>
+
+
+    <!-- FORM PEMESANAN -->
+    <section class="booking-section">
+
+        <div class="booking-layout">
+
+            <div class="booking-form-card">
+
+                <div class="form-title">
+                    <h2>Formulir Pemesanan</h2>
+                    <p>Isi data dengan benar sebelum melanjutkan.</p>
+                </div>
+
+
+                <form id="formPemesanan">
+
+                    <div class="form-group">
+                        <label for="namaPemesan">Nama Lengkap</label>
+                        <input type="text" id="namaPemesan"
+                            placeholder="Masukkan nama lengkap" required>
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="emailPemesan">Email</label>
+                            <input type="email" id="emailPemesan"
+                                placeholder="nama@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="teleponPemesan">Nomor WhatsApp</label>
+                            <input type="tel" id="teleponPemesan"
+                                placeholder="08xxxxxxxxxx" required>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="destinasiPesan">Destinasi Wisata</label>
+                        <select id="destinasiPesan" required>
+                            <option value="">Pilih destinasi</option>
+                            <option value="Bali">Bali</option>
+                            <option value="Raja Ampat">Raja Ampat</option>
+                            <option value="Gunung Bromo">Gunung Bromo</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="tanggalBerangkat">Tanggal Keberangkatan</label>
+                            <input type="date" id="tanggalBerangkat" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="jumlahPeserta">Jumlah Peserta</label>
+                            <input type="number" id="jumlahPeserta"
+                                min="1" max="20" value="1" required>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="catatanPesanan">Catatan Tambahan</label>
+                        <textarea id="catatanPesanan"
+                            placeholder="Tuliskan permintaan khusus jika ada..."
+                            rows="4"></textarea>
+                    </div>
+
+
+                    <button type="submit" class="btn-pesan">
+                        Lanjutkan Pemesanan
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- RINGKASAN -->
+            <div class="booking-summary">
+
+                <div class="summary-heading">
+                    <i class="fa-solid fa-receipt"></i>
+                    <h3>Ringkasan Pesanan</h3>
+                </div>
+
+                <div class="summary-destination">
+                    <div class="summary-image">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                    </div>
+
+                    <div>
+                        <p>DESTINASI PILIHAN</p>
+                        <h3 id="ringkasanDestinasi">Belum dipilih</h3>
+                    </div>
+                </div>
+
+
+                <div class="summary-info">
+                    <div>
+                        <span>Durasi perjalanan</span>
+                        <strong id="ringkasanDurasi">-</strong>
+                    </div>
+
+                    <div>
+                        <span>Jumlah peserta</span>
+                        <strong id="ringkasanPeserta">1 orang</strong>
+                    </div>
+
+                    <div>
+                        <span>Harga per orang</span>
+                        <strong id="ringkasanHarga">Rp0</strong>
+                    </div>
+                </div>
+
+
+                <div class="summary-total">
+                    <span>Total pembayaran</span>
+                    <h2 id="totalHarga">Rp0</h2>
+                </div>
+
+                <p class="summary-note">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Total pembayaran dihitung berdasarkan jumlah peserta.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HASIL PEMESANAN -->
+    <section class="hasil-pemesanan" id="hasilPemesanan"
+        style="display: none;">
+
+        <div class="hasil-card">
+
+            <div class="hasil-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+            <h2>Ringkasan Pemesanan</h2>
+
+            <p class="hasil-keterangan">
+                Data pemesanan berhasil diperiksa. Berikut rincian pesanan kamu.
+            </p>
+
+            <div id="isiHasilPemesanan"></div>
+
+            <button onclick="window.print()" class="btn-cetak">
+                <i class="fa-solid fa-print"></i>
+                Cetak Ringkasan
+            </button>
+
+            <a href="index.html" class="btn-home">
+                Kembali ke Beranda
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <p>© 2026 JelajahNusa. Temukan Cerita, Jelajahi Indonesia.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

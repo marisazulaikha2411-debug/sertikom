@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detail Wisata | JelajahNusa</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                Jelajah<span>Nusa.</span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="index.html#beranda">Beranda</a>
+                <a href="index.html#destinasi" class="active">Destinasi</a>
+                <a href="index.html#paket">Paket Wisata</a>
+                <a href="index.html#tentang">Tentang Kami</a>
+            </nav>
+
+            <a href="index.html" class="nav-button">
+                <i class="fa-solid fa-arrow-left"></i> Kembali
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- COVER DESTINASI -->
+    <section class="detail-hero" id="detailHero">
+
+        <div class="detail-hero-overlay"></div>
+
+        <div class="detail-hero-content">
+
+            <a href="index.html#destinasi" class="back-link">
+                <i class="fa-solid fa-arrow-left"></i>
+                Kembali ke Destinasi
+            </a>
+
+            <span class="detail-category" id="detailKategori">
+                DESTINASI WISATA
+            </span>
+
+            <h1 id="detailNama">Nama Destinasi</h1>
+
+            <p id="detailLokasi">
+                <i class="fa-solid fa-location-dot"></i>
+                Lokasi wisata
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- KONTEN DETAIL -->
+    <main class="detail-main">
+
+        <div class="detail-container">
+
+            <!-- INFORMASI WISATA -->
+            <div class="detail-information">
+
+                <div class="detail-intro">
+                    <span class="section-label">MENGENAL DESTINASI</span>
+
+                    <h2 id="detailJudul">
+                        Keindahan Alam Indonesia
+                    </h2>
+
+                    <p id="detailDeskripsi"></p>
+                </div>
+
+
+                <!-- PENGALAMAN -->
+                <div class="detail-block">
+
+                    <h3>
+                        <i class="fa-solid fa-compass"></i>
+                        Pengalaman Wisata
+                    </h3>
+
+                    <p id="detailPengalaman"></p>
+
+                </div>
+
+
+                <!-- DAYA TARIK -->
+                <div class="detail-block">
+
+                    <h3>
+                        <i class="fa-solid fa-star"></i>
+                        Daya Tarik Destinasi
+                    </h3>
+
+                    <div class="attraction-grid" id="detailDayaTarik"></div>
+
+                </div>
+
+
+                <!-- FASILITAS -->
+                <div class="detail-block">
+
+                    <h3>
+                        <i class="fa-solid fa-check-circle"></i>
+                        Fasilitas Paket
+                    </h3>
+
+                    <ul class="facility-list" id="detailFasilitas"></ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- KARTU PEMESANAN -->
+            <aside class="detail-booking">
+
+                <div class="booking-card-top">
+                    <span>PAKET PERJALANAN</span>
+
+                    <h2 id="detailHarga">Rp0</h2>
+
+                    <p>Harga per orang</p>
+                </div>
+
+                <div class="booking-card-info">
+
+                    <div>
+                        <i class="fa-regular fa-clock"></i>
+
+                        <span>
+                            Durasi
+                            <strong id="detailDurasi"></strong>
+                        </span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span>
+                            Lokasi
+                            <strong id="detailLokasiSingkat"></strong>
+                        </span>
+                    </div>
+
+                </div>
+
+                <a href="#" id="tombolPesanDetail" class="btn-primary">
+                    Pesan Perjalanan
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <div class="booking-note">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Pilih tanggal dan jumlah peserta pada halaman pemesanan.
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- CTA -->
+    <section class="detail-cta">
+
+        <div>
+            <span>SIAP UNTUK MENJELAJAH?</span>
+
+            <h2>Jadikan Perjalanan Ini<br>Kenangan Berharga.</h2>
+
+            <p>
+                Rencanakan perjalananmu sekarang bersama JelajahNusa.
+            </p>
+        </div>
+
+        <a href="#" id="tombolPesanBawah" class="btn-light">
+            Pesan Sekarang
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    Jelajah<span>Nusa.</span>
+                </a>
+
+                <p>
+                    Temukan cerita, jelajahi keindahan
+                    Indonesia bersama JelajahNusa.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navigasi</h4>
+                <a href="index.html#beranda">Beranda</a>
+                <a href="index.html#destinasi">Destinasi</a>
+                <a href="index.html#paket">Paket Wisata</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Informasi</h4>
+                <a href="index.html#tentang">Tentang Kami</a>
+                <a href="index.html#kontak">Kontak</a>
+            </div>
+
+            <div class="footer-social">
+                <h4>Ikuti Kami</h4>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 JelajahNusa. Semua Hak Dilindungi.</p>
+            <p>Temukan Cerita, Jelajahi Indonesia.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

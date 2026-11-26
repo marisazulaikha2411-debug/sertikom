@@ -1,62 +1,1047 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
+<!doctype html>
+<html lang="id">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Jejah Nusa- Temukan destinasi dan pesan perjalanan impianmu."
-    />
-    <title>Jejah Nusa | Jelajahi Dunia Lebih Jauh</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>JelajahNusa | Temukan Cerita, Jelajahi Indonesia</title>
+
+    <!-- Bootstrap 5 -->
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
   </head>
-<body>
-      <header class="hero" id="beranda">
+
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top navbar-jelajahnusa"
+    >
       <div class="container">
-        <nav class="navbar">
-          <a class="brand" href="#beranda"
-            ><i class="fa-solid fa-plane-departure"></i
-            ><span>Jejah Nusa<small>Jelajahi Lebih Jauh</small></span></a
-          >
-          <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          <div class="navlinks" id="navLinks">
-            <a href="#beranda">Beranda</a><a href="#destinasi">Destinasi</a
-            ><a href="#paket">Paket Wisata</a> <a href="#promo">Promo</a
-            ><a href="#tentang">Tentang Kami</a><a href="#kontak">Kontak</a>
+        <a class="navbar-brand fw-bold" href="#home">
+          <i class="fa-solid fa-compass"></i>
+          Jelajah<span>Nusa.</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destinations">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <a href="#packages" class="btn btn-ocean ms-lg-3"> Explore Now </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="hero-section">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <p class="hero-label">
+          <i class="fa-solid fa-earth-asia"></i>
+          EXPLORE THE BEAUTY OF INDONESIA
+        </p>
+
+        <h1>Jelajahi Keindahan Indonesia Bersama <span>JelajahNusa</span></h1>
+
+        <p class="hero-description">
+          Temukan pengalaman perjalanan yang berkesan, mulai dari pantai tropis,
+          pegunungan, hingga kekayaan budaya Nusantara.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#destinations" class="btn btn-ocean btn-lg">
+            Explore Destinations
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="#packages" class="btn btn-outline-light btn-lg">
+            View Packages
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>DISCOVER INDONESIA</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="about-image">
+              <img src="assets/bromo.jpg" alt="Pemandangan perjalanan wisata" />
+
+              <div class="about-image-label">
+                <i class="fa-solid fa-plane"></i>
+                Explore More, Experience More
+              </div>
+            </div>
           </div>
-          <button class="signin" id="signInBtn">
-            <i class="fa-regular fa-user"></i> Masuk
-          </button>
-        </nav>
 
-        <div class="hero-content">
-          <div class="hero-copy">
-            <h1>Jelajahi Lebih Jauh,</h1>
-            <span class="script">Hidup Lebih Berwarna</span>
-            <p>
-              Temukan destinasi menakjubkan, pengalaman tak terlupakan, dan
-              penawaran terbaik untuk petualangan berikutnya.
+          <div class="col-lg-6">
+            <p class="section-label">ABOUT JELAJAHNUSA</p>
+
+            <h2 class="section-title">
+              Your Journey,
+              <span>Our Passion</span>
+            </h2>
+
+            <p class="section-description">
+              JelajahNusa hadir untuk membantu wisatawan menjelajahi keindahan
+              Indonesia melalui perjalanan yang nyaman, terencana, dan berkesan.
+              Kami percaya setiap perjalanan memiliki cerita yang layak
+              dikenang.
             </p>
-            <a class="btn" href="#destinasi"
-              >Jelajahi Sekarang <i class="fa-solid fa-arrow-right"></i
-            ></a>
-            <a class="btn btn-outline" href="#tentang"
-              ><i class="fa-solid fa-circle-play"></i> Tentang Kami</a
-            >
 
-            
-</body>
+            <div class="about-features">
+              <div class="about-feature">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <div>
+                  <h5>Paket Perjalanan Terkurasi</h5>
+                  <p>Pilihan perjalanan menarik untuk berbagai pengalaman.</p>
+                </div>
+              </div>
+
+              <div class="about-feature">
+                <i class="fa-solid fa-user-tie"></i>
+                <div>
+                  <h5>Pemandu Berpengalaman</h5>
+                  <p>Perjalanan didampingi pemandu wisata.</p>
+                </div>
+              </div>
+
+              <div class="about-feature">
+                <i class="fa-solid fa-wallet"></i>
+                <div>
+                  <h5>Harga Transparan</h5>
+                  <p>Informasi harga ditampilkan dengan jelas.</p>
+                </div>
+              </div>
+
+              <div class="about-feature">
+                <i class="fa-solid fa-headset"></i>
+                <div>
+                  <h5>Dukungan Pelanggan</h5>
+                  <p>Kami siap membantu kebutuhan perjalananmu.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS SLIDER -->
+    <section id="destinations" class="section-padding section-light">
+      <div class="container">
+        <div class="section-heading text-center">
+          <p class="section-label">DESTINASI PILIHAN</p>
+
+          <h2 class="section-title">
+            Explore Popular <span>Destinations</span>
+          </h2>
+
+          <p class="section-description">
+            Geser dan temukan berbagai destinasi menarik di Indonesia.
+          </p>
+        </div>
+
+        <div id="destinationSlider" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+              <div class="destination-slide">
+                <img src="assets/bali2.jpg" alt="Bali" />
+
+                <div class="destination-slide-info">
+                  <h3>Bali</h3>
+                  <p>Bali</p>
+                  <p>
+                    Pulau dengan pantai tropis, budaya tradisional, dan panorama
+                    alam yang memukau.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="carousel-item">
+              <div class="destination-slide">
+                <img src="assets/raja-ampat.jpg" alt="Raja Ampat" />
+
+                <div class="destination-slide-info">
+                  <h3>Raja Ampat</h3>
+                  <p>Papua Barat Daya</p>
+                  <p>
+                    Kepulauan dengan laut biru, gugusan pulau, dan keindahan
+                    alam bawah laut.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="carousel-item">
+              <div class="destination-slide">
+                <img src="assets/bromo2.jpg" alt="Gunung Bromo" />
+
+                <div class="destination-slide-info">
+                  <h3>Gunung Bromo</h3>
+                  <p>Jawa Timur</p>
+                  <p>
+                    Destinasi pegunungan dengan panorama matahari terbit dan
+                    lautan pasir.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 4 -->
+            <div class="carousel-item">
+              <div class="destination-slide">
+                <img src="assets/labuan-bajo.jpg" alt="Labuan Bajo" />
+
+                <div class="destination-slide-info">
+                  <h3>Labuan Bajo</h3>
+                  <p>Nusa Tenggara Timur</p>
+                  <p>Gerbang menuju Pulau Komodo dan gugusan pulau eksotis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TOMBOL SLIDER -->
+          <button
+            class="carousel-control-prev destination-control"
+            type="button"
+            data-bs-target="#destinationSlider"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Sebelumnya</span>
+          </button>
+
+          <button
+            class="carousel-control-next destination-control"
+            type="button"
+            data-bs-target="#destinationSlider"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Berikutnya</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-heading text-center">
+          <p class="section-label">OUR GALLERY</p>
+
+          <h2 class="section-title">
+            Moments Worth
+            <span>Remembering</span>
+          </h2>
+
+          <p class="section-description">
+            Beberapa keindahan dan pengalaman yang bisa ditemukan di Indonesia.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-large">
+            <img
+              src="https://images.unsplash.com/photo-1537996194471-e657df975ab4"
+              alt="Pemandangan Bali"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2"
+              alt="Pemandangan laut"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+              alt="Pemandangan alam"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
+              alt="Danau dan pegunungan"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+              alt="Pemandangan pegunungan"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section id="packages" class="section-padding section-light">
+      <div class="container">
+        <div class="section-heading text-center">
+          <p class="section-label">OUR PACKAGES</p>
+          <h2 class="section-title">Choose Your Next <span>Adventure</span></h2>
+          <p class="section-description">
+            Pilih paket perjalanan sesuai dengan petualangan yang kamu inginkan.
+          </p>
+        </div>
+
+        <div id="jelajahNusaPackages" class="carousel slide">
+          <!-- INDICATORS -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#jelajahNusaPackages"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#jelajahNusaPackages"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#jelajahNusaPackages"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#jelajahNusaPackages"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="package-card">
+                    <div class="package-image">
+                      <img
+                        src="https://images.unsplash.com/photo-1537996194471-e657df975ab4"
+                        alt="Bali Escape"
+                      />
+                    </div>
+                    <div class="package-content">
+                      <span class="package-category">BEACH & CULTURE</span>
+                      <h4>Bali Escape</h4>
+                      <p><i class="fa-solid fa-location-dot"></i> Bali</p>
+                      <div class="package-duration">
+                        <i class="fa-regular fa-clock"></i> 3 Hari 2 Malam
+                      </div>
+                      <h3>Rp2.450.000 <small>/orang</small></h3>
+                      <p class="package-highlight">
+                        Pantai, budaya, dan sunset.
+                      </p>
+                      <button
+                        class="btn btn-detail"
+                        onclick="tampilkanDetail('bali')"
+                      >
+                        Detail Paket <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="package-card">
+                    <div class="package-image">
+                      <img
+                        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                        alt="Bromo Sunrise Trip"
+                      />
+                    </div>
+                    <div class="package-content">
+                      <span class="package-category">MOUNTAIN TRIP</span>
+                      <h4>Bromo Sunrise Trip</h4>
+                      <p><i class="fa-solid fa-location-dot"></i> Jawa Timur</p>
+                      <div class="package-duration">
+                        <i class="fa-regular fa-clock"></i> 2 Hari 1 Malam
+                      </div>
+                      <h3>Rp1.350.000 <small>/orang</small></h3>
+                      <p class="package-highlight">Sunrise dan lautan pasir.</p>
+                      <button
+                        class="btn btn-detail"
+                        onclick="tampilkanDetail('bromo')"
+                      >
+                        Detail Paket <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="package-card">
+                    <div class="package-image">
+                      <img
+                        src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2"
+                        alt="Raja Ampat"
+                      />
+                    </div>
+                    <div class="package-content">
+                      <span class="package-category">OCEAN ADVENTURE</span>
+                      <h4>Raja Ampat Discovery</h4>
+                      <p>
+                        <i class="fa-solid fa-location-dot"></i> Papua Barat
+                        Daya
+                      </p>
+                      <div class="package-duration">
+                        <i class="fa-regular fa-clock"></i> 4 Hari 3 Malam
+                      </div>
+                      <h3>Rp5.750.000 <small>/orang</small></h3>
+                      <p class="package-highlight">
+                        Island hopping dan snorkeling.
+                      </p>
+                      <button
+                        class="btn btn-detail"
+                        onclick="tampilkanDetail('raja')"
+                      >
+                        Detail Paket <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="package-card">
+                    <div class="package-image">
+                      <img
+                        src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+                        alt="Labuan Bajo"
+                      />
+                    </div>
+                    <div class="package-content">
+                      <span class="package-category">ISLAND EXPLORER</span>
+                      <h4>Labuan Bajo Explorer</h4>
+                      <p>
+                        <i class="fa-solid fa-location-dot"></i> Nusa Tenggara
+                        Timur
+                      </p>
+                      <div class="package-duration">
+                        <i class="fa-regular fa-clock"></i> 3 Hari 2 Malam
+                      </div>
+                      <h3>Rp3.950.000 <small>/orang</small></h3>
+                      <p class="package-highlight">Pulau Komodo dan sailing.</p>
+                      <button
+                        class="btn btn-detail"
+                        onclick="tampilkanDetail('labuan')"
+                      >
+                        Detail Paket <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="package-card">
+                    <div class="package-image">
+                      <img
+                        src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd"
+                        alt="Jogja"
+                      />
+                    </div>
+                    <div class="package-content">
+                      <span class="package-category">CULTURE & HERITAGE</span>
+                      <h4>Jogja Heritage Journey</h4>
+                      <p><i class="fa-solid fa-location-dot"></i> Yogyakarta</p>
+                      <div class="package-duration">
+                        <i class="fa-regular fa-clock"></i> 3 Hari 2 Malam
+                      </div>
+                      <h3>Rp1.850.000 <small>/orang</small></h3>
+                      <p class="package-highlight">
+                        Borobudur, Malioboro, dan Keraton.
+                      </p>
+                      <button
+                        class="btn btn-detail"
+                        onclick="tampilkanDetail('jogja')"
+                      >
+                        Detail Paket <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="package-card">
+                    <div class="package-image">
+                      <img
+                        src="assets/59dadae1498c168dcf6382474d1ac756.jpg"
+                        alt="Lombok"
+                      />
+                    </div>
+                    <div class="package-content">
+                      <span class="package-category">TROPICAL ESCAPE</span>
+                      <h4>Lombok Tropical Escape</h4>
+                      <p><i class="fa-solid fa-location-dot"></i> Lombok</p>
+                      <div class="package-duration">
+                        <i class="fa-regular fa-clock"></i> 3 Hari 2 Malam
+                      </div>
+                      <h3>Rp2.750.000 <small>/orang</small></h3>
+                      <p class="package-highlight">
+                        Pantai Kuta dan Bukit Merese.
+                      </p>
+                      <button
+                        class="btn btn-detail"
+                        onclick="tampilkanDetail('lombok')"
+                      >
+                        Detail Paket <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 4 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="package-card">
+                    <div class="package-image">
+                      <img
+                        src="https://images.unsplash.com/photo-1500534623283-312aade485b7"
+                        alt="Lake Toba"
+                      />
+                    </div>
+                    <div class="package-content">
+                      <span class="package-category">NATURE ADVENTURE</span>
+                      <h4>Lake Toba Adventure</h4>
+                      <p>
+                        <i class="fa-solid fa-location-dot"></i> Sumatera Utara
+                      </p>
+                      <div class="package-duration">
+                        <i class="fa-regular fa-clock"></i> 3 Hari 2 Malam
+                      </div>
+                      <h3>Rp2.250.000 <small>/orang</small></h3>
+                      <p class="package-highlight">
+                        Danau Toba dan Pulau Samosir.
+                      </p>
+                      <button
+                        class="btn btn-detail"
+                        onclick="tampilkanDetail('toba')"
+                      >
+                        Detail Paket <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="package-card">
+                    <div class="package-image">
+                      <img
+                        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+                        alt="Ijen"
+                      />
+                    </div>
+                    <div class="package-content">
+                      <span class="package-category">MOUNTAIN ADVENTURE</span>
+                      <h4>Ijen Blue Fire Experience</h4>
+                      <p><i class="fa-solid fa-location-dot"></i> Banyuwangi</p>
+                      <div class="package-duration">
+                        <i class="fa-regular fa-clock"></i> 2 Hari 1 Malam
+                      </div>
+                      <h3>Rp1.650.000 <small>/orang</small></h3>
+                      <p class="package-highlight">
+                        Kawah Ijen dan panorama alam.
+                      </p>
+                      <button
+                        class="btn btn-detail"
+                        onclick="tampilkanDetail('ijen')"
+                      >
+                        Detail Paket <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PREVIOUS -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#jelajahNusaPackages"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <!-- NEXT -->
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#jelajahNusaPackages"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking" class="booking-modern">
+      <div class="booking-container">
+        <div class="booking-layout-modern">
+          <!-- PANEL KIRI -->
+          <div class="booking-intro">
+            <h3 class="booking-brand">JelajahNusa</h3>
+
+            <div class="booking-intro-content">
+              <h2>Liburan seru ke destinasi favorit Indonesia.</h2>
+
+              <p>
+                Pilih paket, isi data, dan pesan perjalananmu dengan mudah
+                bersama JelajahNusa.
+              </p>
+            </div>
+
+            <div class="booking-benefits">
+              <div class="benefit-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Bali, Bromo, Raja Ampat, Labuan Bajo</span>
+              </div>
+
+              <div class="benefit-item">
+                <i class="fa-solid fa-users"></i>
+                <span>Pemandu wisata berpengalaman</span>
+              </div>
+
+              <div class="benefit-item">
+                <i class="fa-solid fa-camera"></i>
+                <span>Pengalaman wisata berkesan</span>
+              </div>
+
+              <div class="benefit-item">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Harga jelas dan transparan</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PANEL KANAN -->
+          <div class="booking-form-panel">
+            <div class="booking-heading">
+              <h2>Data Pemesan</h2>
+              <p>Lengkapi data berikut untuk memesan paket wisata.</p>
+            </div>
+
+            <form id="formBooking" novalidate>
+              <div class="booking-field">
+                <label for="bookingNama">Nama Lengkap</label>
+                <input
+                  type="text"
+                  id="bookingNama"
+                  class="form-control"
+                  placeholder="Masukkan nama lengkap"
+                />
+                <small class="error-message" id="bookingErrorNama"></small>
+              </div>
+
+              <div class="booking-field">
+                <label for="bookingEmail">Email</label>
+                <input
+                  type="email"
+                  id="bookingEmail"
+                  class="form-control"
+                  placeholder="nama@email.com"
+                />
+                <small class="error-message" id="bookingErrorEmail"></small>
+              </div>
+
+              <div class="booking-field">
+                <label for="bookingTelepon">Nomor WhatsApp</label>
+                <input
+                  type="tel"
+                  id="bookingTelepon"
+                  class="form-control"
+                  placeholder="08xxxxxxxxxx"
+                />
+                <small class="error-message" id="bookingErrorTelepon"></small>
+              </div>
+
+              <div class="booking-field">
+                <label for="bookingPaket">Pilihan Paket Wisata</label>
+                <select id="bookingPaket" class="form-select">
+                  <option value="">-- Pilih Paket --</option>
+                  <option value="bali">Bali Escape</option>
+                  <option value="bromo">Bromo Sunrise Trip</option>
+                  <option value="raja">Raja Ampat Discovery</option>
+                  <option value="labuan">Labuan Bajo Explorer</option>
+                </select>
+                <small class="error-message" id="bookingErrorPaket"></small>
+              </div>
+
+              <div class="booking-fields-row">
+                <div class="booking-field">
+                  <label for="bookingJumlah">Jumlah Peserta</label>
+                  <input
+                    type="number"
+                    id="bookingJumlah"
+                    class="form-control"
+                    min="1"
+                    max="20"
+                    value="1"
+                    placeholder="Jumlah orang"
+                  />
+                  <small class="error-message" id="bookingErrorJumlah"></small>
+                </div>
+
+                <div class="booking-field">
+                  <label for="bookingTanggal">Tanggal Berangkat</label>
+                  <input type="date" id="bookingTanggal" class="form-control" />
+                  <small class="error-message" id="bookingErrorTanggal"></small>
+                </div>
+              </div>
+
+              <div class="booking-field">
+                <label for="bookingCatatan">Catatan Tambahan</label>
+                <textarea
+                  id="bookingCatatan"
+                  class="form-control"
+                  rows="2"
+                  placeholder="Permintaan tambahan (opsional)"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="booking-submit">
+                Pesan Sekarang
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- MENJAGA ELEMEN RINGKASAN UNTUK JAVASCRIPT LAMA -->
+        <div hidden>
+          <span id="summaryNama">Belum dipilih</span>
+          <span id="summaryDurasi">-</span>
+          <span id="summaryHarga">Rp0</span>
+          <span id="summaryJumlah">1 orang</span>
+          <span id="summaryTotal">Rp0</span>
+        </div>
+
+        <!-- HASIL PEMESANAN / INVOICE -->
+        <div id="hasilBooking" class="booking-result" hidden>
+          <div class="invoice-heading">
+            <div>
+              <h2>Invoice Booking</h2>
+              <p>Terima kasih, pesananmu sudah kami catat.</p>
+            </div>
+
+            <span class="invoice-status">
+              <i class="fa-solid fa-circle-check"></i>
+              Terkonfirmasi
+            </span>
+          </div>
+
+          <div id="detailHasilBooking"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL DETAIL PAKET -->
+    <div
+      class="modal fade"
+      id="modalPaket"
+      tabindex="-1"
+      aria-labelledby="judulModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="judulModal">Detail Paket Wisata</h5>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              id="gambarModal"
+              src=""
+              alt="Foto paket wisata"
+              class="modal-package-image"
+            />
+
+            <div class="modal-package-info">
+              <span id="kategoriModal" class="package-category"></span>
+
+              <h3 id="namaModal"></h3>
+
+              <p id="destinasiModal"></p>
+
+              <div class="modal-detail-row">
+                <span>
+                  <i class="fa-regular fa-clock"></i>
+                  <span id="durasiModal"></span>
+                </span>
+
+                <strong id="hargaModal"></strong>
+              </div>
+
+              <p id="deskripsiModal" class="mt-3"></p>
+
+              <h5>Highlight Perjalanan</h5>
+              <p id="highlightModal"></p>
+
+              <h5>Fasilitas Paket</h5>
+              <ul id="fasilitasModal"></ul>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+
+            <button type="button" class="btn btn-ocean" id="tombolPesanPaket">
+              Pesan Paket
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="section-heading text-center">
+          <p class="section-label">GET IN TOUCH</p>
+
+          <h2 class="section-title">Let's Plan Your <span>Next Trip</span></h2>
+
+          <p class="section-description">
+            Punya pertanyaan atau ingin merencanakan liburan? Hubungi tim
+            JelajahNusa melalui informasi berikut.
+          </p>
+        </div>
+
+        <!-- CONTACT INFORMATION -->
+        <div class="contact-information">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div>
+              <h5>Alamat</h5>
+              <p>Jl. Poras No. 7, Bogor</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <div>
+              <h5>Telepon</h5>
+              <p>(0251) 8376 224</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div>
+              <h5>Email</h5>
+              <p>hello@jelajahnusa.id</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+
+            <div>
+              <h5>Instagram</h5>
+              <p>@jelajahnusa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <a href="#home" class="footer-brand">
+            <i class="fa-solid fa-compass"></i>
+            Jelajah<span>Nusa.</span>
+          </a>
+
+          <p>Temukan Cerita, Jelajahi Indonesia.</p>
+
+          <div class="footer-social">
+            <a href="https://www.instagram.com/jelajahnusa/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#contact">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 JelajahNusa. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CUSTOM JAVASCRIPT -->
+    <script src="script.js"></script>
+  </body>
 </html>
+
+<!-- CLASS BUTTON -->
+<!-- btn digunakan untuk memberikan tampilan dasar tombol. -->
+
+<!-- BTN-OCEAN -->
+<!-- btn-ocean merupakan class CSS buatan sendiri untuk memberikan
+     desain khusus pada tombol bertema ocean. -->
+
+<!-- MS-LG-3 -->
+<!-- Memberikan margin sisi kiri sebesar 1rem pada layar large ke atas. -->
+
+<!-- DATA-BS-SLIDE PREV -->
+<!-- Digunakan untuk mengarahkan carousel ke slide sebelumnya. -->
+
+<!-- DATA-BS-SLIDE NEXT -->
+<!-- Digunakan untuk mengarahkan carousel ke slide berikutnya. -->
+<!-- /* CONTAINER */ /* Digunakan untuk membatasi dan mengatur lebar area konten
+website. */ /* ROW */ /* Digunakan untuk membuat baris dalam sistem grid
+Bootstrap. */ /* COL */ /* Digunakan untuk membuat kolom agar konten tersusun
+rapi. */ /* BTN */ /* Digunakan untuk memberikan tampilan dasar pada tombol. */
+/* D-FLEX */ /* Digunakan untuk mengaktifkan Flexbox agar posisi elemen lebih
+mudah diatur. */ /* TEXT-CENTER */ /* Digunakan untuk membuat teks berada di
+tengah. */ /* FW-BOLD */ /* Digunakan untuk membuat tulisan menjadi tebal. */ /*
+MT-3 */ /* Digunakan untuk memberikan jarak luar bagian atas (margin-top). */ /*
+MB-3 */ /* Digunakan untuk memberikan jarak luar bagian bawah (margin-bottom).
+*/ /* P-3 */ /* Digunakan untuk memberikan jarak bagian dalam pada semua sisi
+elemen (padding). */
+MT-3 -->
+<!-- Memberikan jarak luar bagian atas (margin-top). -->
+
+<!-- MB-3 -->
+<!-- Memberikan jarak luar bagian bawah (margin-bottom). -->
+
+<!-- MS-3 -->
+<!-- Memberikan jarak luar sisi kiri atau start (margin-start). -->
+
+<!-- ME-3 -->
+<!-- Memberikan jarak luar sisi kanan atau end (margin-end). -->
+
+<!-- P-3 -->
+<!-- Memberikan jarak dalam pada semua sisi elemen (padding). -->
+
+<!-- PX-3 -->
+<!-- Memberikan jarak dalam sisi kiri dan kanan (padding horizontal). -->
+
+<!-- PY-3 -->
+<!-- Memberikan jarak dalam sisi atas dan bawah (padding vertikal). -->
+
+<!-- KETERANGAN SINGKAT BOOTSTRAP SPACING -->
+
+<!-- m = margin (jarak luar). -->
+<!-- p = padding (jarak dalam). -->
+<!-- t = top (atas). -->
+<!-- b = bottom (bawah). -->
+<!-- s = start (awal). -->
+<!-- e = end (akhir). -->
+<!-- x = horizontal (kiri dan kanan). -->
+<!-- y = vertical (atas dan bawah). -->
+
+<!-- ANGKA 1-5 MENUNJUKKAN SKALA UKURAN JARAK BOOTSTRAP. -->
+<!-- Contoh: 3 = 1rem atau 16px pada pengaturan default Bootstrap. -->
